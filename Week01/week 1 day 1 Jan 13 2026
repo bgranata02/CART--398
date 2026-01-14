@@ -1,0 +1,3 @@
+//patch January 13 2026
+//setcps(130/60/4)
+s("[wt_digital_basique/6, gm_voice_oohs], gm_fx_rain*5, gm_taiko_drum/2 [gm_lead_6_voice gm_lead_6_voice gm_lead_6_voice gm_lead_6_voice]/4")
