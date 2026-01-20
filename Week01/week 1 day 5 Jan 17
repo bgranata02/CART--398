@@ -1,0 +1,4 @@
+s("[wt_digital wt_digital_basique, gm_gunshot [wt_digital_basique wt_digital_basique], wt_vgame*2, hh*3] [gm_acoustic_guitar_nylon, gm_voice_oohs/9 gm_acoustic_guitar_nylon gm_acoustic_guitar_nylon*3]")
+
+//second patch
+s("white, [bd mt lt] [white*4], { gm_steel_drums gm_steel_drums, gm_steel_drums@3}, [bd bd lt mt] wt_digital_basique, [lt mt lt mt lt*2] wt_digital_basique")
