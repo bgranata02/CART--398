@@ -1,0 +1,12 @@
+//samples('')
+//insert the github link
+
+//patch done in class individually with sounds from free sounds
+// to find the link for the sound open the free sound page go on developer tools, on elements crntl-f and find mp3 to find the link to the sound
+ samples({
+cello:'https://cdn.freesound.org/previews/42/42252_7037-lq.mp3',
+harp:'https://cdn.freesound.org/previews/53/53842_335299-lq.mp3',
+ bitcrushed_harp: 'https://cdn.freesound.org/previews/790/790846_6368615-lq.mp3',
+ cello_d:'https://cdn.freesound.org/previews/61/61153_96-lq.mp3'})
+
+s("cello harp, bitcrushed_harp?.6 [harp/3 ~ cello*2] [~ ~ ~ ~ ~ harp ~ ~] [cello_d | cello]")
