@@ -1,0 +1,2 @@
+s("[ocarina ~ ocarina/3 {folkharp, [folkharp, folkharp, folkharp, folkharp] folkharp, folkharp*4},
+fingercymbal fingercymbal fingercymbal, hh*4 ]").note("c4").octave (8)
