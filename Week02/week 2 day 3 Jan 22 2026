@@ -1,0 +1,19 @@
+samples({
+drum:'https://cdn.freesound.org/previews/599/599876_2871314-lq.mp3',
+base_drum:'https://cdn.freesound.org/previews/36/36539_109798-lq.mp3',
+drum_kick:'https://cdn.freesound.org/previews/581/581454_5790048-lq.mp3',
+stomping:'https://cdn.freesound.org/previews/829/829814_17675683-lq.mp3',
+kick:'https://cdn.freesound.org/previews/691/691737_4819210-lq.mp3',
+kick_one:'https://cdn.freesound.org/previews/691/691739_4819210-lq.mp3',
+kick_two:'https://cdn.freesound.org/previews/833/833549_17675683-lq.mp3',
+glitch:'https://cdn.freesound.org/previews/843/843037_17675683-lq.mp3',
+snare:'https://cdn.freesound.org/previews/843/843038_5511175-lq.mp3',
+wave:'https://cdn.freesound.org/previews/842/842937_16155788-lq.mp3',
+electric:'https://cdn.freesound.org/previews/385/385868_7123687-lq.mp3',
+guitar:'https://cdn.freesound.org/previews/508/508811_1690102-lq.mp3'
+ })
+
+$: s("hh:6!4 hh .5 .4 .3 ")._punchcard()
+
+$:s("electric:2,5 [ hh hh*5 hh hh*2]").struct("1 0  1 0 1 0 1 1").scale("f")._punchcard()
+$:s("drum_kick< 9 6 4 2>").scale("g:minor")._punchca
