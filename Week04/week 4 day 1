@@ -1,0 +1,24 @@
+ samples({
+drum:'https://cdn.freesound.org/previews/599/599876_2871314-lq.mp3',
+base_drum:'https://cdn.freesound.org/previews/36/36539_109798-lq.mp3',
+drum_kick:'https://cdn.freesound.org/previews/581/581454_5790048-lq.mp3',
+stomping:'https://cdn.freesound.org/previews/829/829814_17675683-lq.mp3',
+kick:'https://cdn.freesound.org/previews/691/691737_4819210-lq.mp3',
+kick_one:'https://cdn.freesound.org/previews/691/691739_4819210-lq.mp3',
+kick_two:'https://cdn.freesound.org/previews/833/833549_17675683-lq.mp3',
+glitch:'https://cdn.freesound.org/previews/843/843037_17675683-lq.mp3',
+snare:'https://cdn.freesound.org/previews/843/843038_5511175-lq.mp3',
+electric:'https://cdn.freesound.org/previews/385/385868_7123687-lq.mp3',
+guitar:'https://cdn.freesound.org/previews/508/508811_1690102-lq.mp3',
+glitch_two:'https://cdn.freesound.org/previews/518/518773_8278798-lq.mp3',
+guitar_three:'https://cdn.freesound.org/previews/40/40406_417293-lq.mp3'
+ })
+
+ s("kick_two kick_two*4 kick_two, bd bd, bd*2 bd bd ~ ~ ~")
+$: s("kuwai< bd bd bd ~ ~ bd hh>, kuwai kuwai*5 [bd bd] kuwai, bd bd ")._punchcard()
+$: s("snare")
+$: s("bd bd bd [ bd ~ bd ~] snare bd")
+
+$: s("electric, ~  electric*4 <electric kick kick electric>")
+$: s("base_drum  ~ base_drum <bd bd>, base_drum*4").gain(.1)
+$: s("kick")
