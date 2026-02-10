@@ -1,0 +1,17 @@
+
+samples('github:bgranata02/CART--398-samples')
+
+s1: stack(
+  s("bd rim [hh< bd bd rim hh> rim]"),
+  
+).every(3, x=> x.speed(3))
+
+s2: stack(
+  s("brown"),
+  s("crackle crackle [hh < rim crackle bd> hh]"),
+   s("gm_acoustic_guitar_steel").gain(.5)
+).every(3, x => x.fast(2)).punchcard()
+
+ s3: stack(
+  s("bd [~ bd < ~ bd hh bd*2>]")
+ )
