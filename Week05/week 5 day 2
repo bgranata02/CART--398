@@ -1,0 +1,20 @@
+$base:
+note("D3".sub(10))
+.sound("supersaw")
+.orbit(6)
+.slow(4)
+.gain(0.2)
+
+$base:
+note("D3*8".sub(10))
+.sound("supersaw")
+.orbit(6)
+.gain(0.4)
+
+$drum:
+//"0, 8, 6, 4, 8", 16 and "0, 8, 4, 3 and 0, 8, 2,  2, 3 
+s("bd:1!6").beat("0, 4, 2, 3", 16).n(irand (3)).orbit(7)._punchcard()
+
+$snare:
+//"0, 8, 6, 4, 8", 16 and "0, 8, 4, 3 and 0, 8, 2,  2, 3 
+s("sd:1!9").beat("0, 0, 3, 3,  4", 16).orbit(7).speed(2).gain(.4)._punchcard()
