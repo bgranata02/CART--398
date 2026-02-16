@@ -1,0 +1,18 @@
+//week 5 day 3   3/5
+$:
+note("[b2 b2*2 a2 f#3*9]")
+.sound("supersaw")
+.slow(2)
+.gain(.4)
+._punchcard()
+
+$drum:
+s("bd*8 hh:3*5").every(2, rev()).slow(2)._punchcard()
+
+$clap:
+n("0 1 [4 2] 3*2").sound("clap").gain(.2)
+  
+$:
+s("bd sd [- bd] sd").bank("RolandTR909").delayfb(0.05).delay(0.25)._punchcard()
+$casio:
+s("casio:2 hh").every(2, rev()).gain(.3)._punchcard()
