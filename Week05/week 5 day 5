@@ -1,0 +1,33 @@
+
+//week 5 day 5   5/5
+
+$base:
+s("[sbd ~ bd bd]*4, [~ ~ ~ ~ ~ ~ ~ sbd]")
+.speed(3)
+.every(4, x => x.cutoff(2000))
+.every(2, x => x.speed(2))
+.lpf(200)
+._punchcard()
+
+
+$hh:
+s("hh*16")
+.gain("[.25 1]*4")
+.every(5, x => x.cutoff(2000))
+.lpf(980)
+._punchcard()
+$back:
+s("sawtooth*2")
+.lpf(200)
+.n(irand(8))
+rib(46,4)
+.ply(3)
+._punchcard()
+$back:
+s("supersaw")
+.sub(6)
+.lpf(200)
+.gain("[.25 1]*4")
+.speed(4)
+.rib(46,4)
+._punchcard()
