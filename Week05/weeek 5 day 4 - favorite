@@ -1,0 +1,31 @@
+
+//week 5 day 4   4/5 
+//resource used to help with sound notes: https://strudel.cc/workshop/first-notes/
+
+$base:
+s("sbd:4*2 ~ , sbd ~ ~ sbd")
+.n(irand(3))._punchcard()
+
+$base:
+s("bd:3*4 ~ , bd:3*2 ~ ~ sbd:3*2")
+.n(irand(3)).gain(.4)._punchcard()
+
+//can still work w/out + ply& rand removed
+$drum:
+sound("bd*4, [~ <sd cp>]*2, [~ hh]*4")
+.bank("RolandTR909")
+.ply(2)
+.n(irand(4))
+.every(2, x => x.slow(2))
+.every(4, x => x.cutoff(2000))
+.gain(.6)
+
+//~ can be removed
+$main:
+note("<[36 48]*4 [34 ~ 46]*4 [41 53]*4 [39 ~ 51]*4, [ ~ ~ ~ ~ ~ ~ ~ ~ 36 53], [~ ~ ~ 38 ~ ~  46 ~ ~ 41 ~ ~ ], [~ ~ ~ 48 ~  ~]>")
+.sound("sawtooth")
+.gain(.2)
+.ply(2)
+.every(2, x => x.speed(2))
+.every(4, x => x.cutoff(2000))
+.scope()
