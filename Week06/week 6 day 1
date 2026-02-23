@@ -1,0 +1,30 @@
+//week 6 day 1
+$note:
+n("<0 6 8 7 0, [0  ~ 4 3]*4>")
+// inclucde  n(irand(4))
+.pianoroll()
+
+$base: s("[jazz ~ jazz]*4 [ ~ ~ ~  ~ ~ ~ ]")
+.slow(1.5)
+  .hpf(2)
+._punchcard()
+$clap:
+n("0 1 [4 2] 3*2")
+  .sound("clap")
+  .gain(.2)
+// include .n(irand(4))
+ 
+$drum:
+note(" [c1  d1]*5")
+sound("akailinn_mt")
+.ply(4)
+.palindrome()
+
+ $DRUM:
+ //rim 0 *2 *4
+ s("sbd [  ~ ~ ~ ], [sbd bd]*4")
+  .slow(2)
+  .cutoff(1000)
+   .every(4, stut())
+   .palindrome()  
+._punchcard()
