@@ -1,0 +1,35 @@
+//week 6 day 2
+$note1:
+note("c!3 e")
+.rev()
+._punchcard()
+
+$note2:
+note("a@ b e <g  c g [c b]*4>")
+  .s("gm_synth_strings_1")
+  .gain(.25)
+  .ply(3)
+  .color("magenta")
+  .every(4, x => x.rev())
+  .every(7, x => x.cutoff(20))
+ .punchcard()
+
+
+$drum:
+//"0, 8, 6, 4, 8", 16 and "0, 8, 4, 3 and 0, 8, 2,  2, 3 
+s("bd:1!6")
+  .beat("0, 8, 2, 4, 2, 3", 16)
+  .orbit(7)
+  .gain(.4)
+.every(3, slow(4))
+
+$snare:
+//"0, 8, 6, 4, 8", 16 and "0, 8, 4, 3 and 0, 8, 2,  2, 3 
+s("sd:2!5").beat("0, 8, 4, 2", 16)
+  .orbit(7)
+  .gain(.2)
+                                                       
+
+
+
+
