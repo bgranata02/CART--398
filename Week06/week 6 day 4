@@ -1,0 +1,37 @@
+
+//week 6 day 4
+ $base:
+s("[bd:2 bd:6]*4,  [ ~ ~ sbd@] ")
+  .rev()
+  .color("red")
+.punchcard()
+
+$base:
+note("[D3 d]*5  e@ d3".sub(10))
+.sound("gm_acoustic_guitar_nylon")
+.orbit(6)
+.speed(4)
+.every(3, x => x.n(irand(7)))
+  .every(2, x => x.rev())
+.gain(0.2)
+
+
+$snare:
+//"0, 8, 6, 4, 8", 16 and "0, 8, 4, 3 and 0, 8, 2,  2, 3 
+s("sd:1!9")
+  .beat("0, 0, 3,  4", 16)
+  .orbit(7)
+  .speed(2)
+  .gain(.4)
+  .every(7, x =>x.n(irand(10)))
+  .color("orange")
+  ._punchcard()
+ 
+
+ $hh:
+ s("hh hh, [ ~ ~ ~ ~ ~ ~ hh:3 hh:4*4]")
+  .gain(".2 .4 .8 .4")
+   .color("yellow")
+._punchcard()
+
+
