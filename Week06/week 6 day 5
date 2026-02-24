@@ -1,0 +1,33 @@
+//week 6 day 5
+
+$base:
+s("sbd*4")
+  .color("black")
+._punchcard()
+
+$base:
+s("sbd:6!8")
+.every(3, x => x.speed(3))
+.gain(".5 .3 .6 .2")
+  .color("purple")
+._punchcard()
+$hh:
+s("<hh*3 rim>*4 ")
+.every(3, x => x.rev())
+.color("magenta")
+
+$drum:
+s(" <bd rim>*4 bass")
+.every(2, x => x.cutoff(100))
+.color("blue")
+.punchcard()
+
+
+$:
+s("clap*3 rim bd [ rim@]")
+.every(4, x => x.rev())
+
+
+
+
+
