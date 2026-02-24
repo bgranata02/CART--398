@@ -1,0 +1,28 @@
+ //week 6 day 3
+ $hh:
+ s("hh:3!4")
+.gain(".5 .3 .6")
+  .n(irand(4))
+._punchcard()
+$base:
+s("rim <rim@>*3")
+.n(irand(7))
+.every(3, x => rev())
+  .color("black")
+.punchcard()
+$drum:
+s("sbd@ rim <bd sbd bd>*4, hh hh")
+.color("cyan")
+._scope()
+
+$note:
+n("<3 2 8>*4 2 ")
+.s("sawtooth")
+.every(200, x => x.cutoff(200).resonance(0.7))
+  .color("magenta")
+._punchcard()
+$base:
+note("D3*8".sub(10))
+.sound("supersaw")
+.orbit(6)
+.gain(0.4)
