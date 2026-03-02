@@ -1,0 +1,20 @@
+//week 7 day 2
+$beat:
+note("<[bb bb2]*4 [ bb2 eb1]*4 [eb2 eb1]*4>")
+.s("supersaw")
+.lpf("400 2000")
+.color("navy blue")
+.every(3, x => x.cutoff(6))
+.ply(2)
+.scope()
+
+$hh:
+sound("hh*8")
+.gain("[.25 1]*6")
+.hpf(300)
+.color("pink")
+
+$: 
+s("bd*4,[~   rim bd:4 sd]*2")
+.every(6, x => x.lpf(200))
+.every(3, x => x.n(irand(3)))
