@@ -9,7 +9,7 @@ note("<[bb bb2]*4 [ bb2 eb1]*4 [eb2 eb1]*4>")
 .scope()
 
 $hh:
-sound("hh*8")
+s("hh*8")
 .gain("[.25 1]*6")
 .hpf(300)
 .color("pink")
