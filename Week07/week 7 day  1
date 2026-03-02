@@ -1,0 +1,32 @@
+//week 7 day 1
+
+$main:
+note("<[e d]*4 [a d3]>*4")
+.s("sawtooth")
+.lpf(600)
+.every(4, x => x.rev())
+.gain(.4)
+.color("purple")
+.scale("a:minor")
+
+$drum:
+ s("[sd:6 casio]*4")
+  .orbit(7)
+   .gain(".2 .4")
+   .color("black")
+  .punchcard()
+
+$drum1:
+s(" [~ <sd cp>]*4, [~ hh]*4")
+.every(5, x=> x.slow())
+.color("cyan")
+.gain(.4)
+
+
+$drum:
+ s(" bd bd@ [<rim rim>]/4")
+   .ply(2)
+   .color("magenta")
+   .every(8, x => x.rev() )
+   .every(3, x => x.cutoff())
+._punchcard()
