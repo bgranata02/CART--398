@@ -1,0 +1,20 @@
+//week 7 day 3
+$beat:
+note("<[bb bb2] [ bb2 eb1]*7>")
+.s("sawtooth")
+.lpf("200 260")
+.color("navy blue")
+.n(irand(5))
+.every(4, x => x.ply(3))
+._punchcard()
+
+$hh:
+s("<[hh:6 bd:6]*4>,  ~ ~ ~ ~ ~ ~ ~ <[hh:6!4]>")
+//.every
+
+
+$guitar:
+n("<5 [8 3]*4 3>, <[ ~ ~ ~ ~ ~ ~ [<5 2>*4]]>")
+.s("gm_acoustic_bass")
+.n(irand(6))
+.gain(.5)'
