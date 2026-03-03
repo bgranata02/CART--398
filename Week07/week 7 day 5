@@ -6,16 +6,30 @@ $drum:
 s("bd:6!4,   bd:4 [sbd:7, rim:5]*4")
 .ply(2)
 .gain("[.3  .5 .8]*4")
+.color("pink")
 
 
  $hh:
 s("hh:6!18")
 .gain("[.6 .2]*8")
 .every(5, x => x.cutoff(8))
+.color("cyan")
+.scope()
  
  $: 
  note("[~ [<[d3,a3]!7  [ d2, d4]!5 [g4 g2]!6> ~]]*2")
 .s("gm_electric_guitar_muted")
    .delay(.8)
 .gain(".5 .3 .9")
+.color("magenta")
+._scope()
+//.n(irand(6))
+
+$: 
+ note("[~ [<[d4. d6]!7 [g4 g2]!6> ~]]*2")
+.s("gm_electric_guitar_muted")
+   .delay(.8)
+.gain(".5 .3 .9")
+   .color("blue")
 .n(irand(6))
+._scope()
