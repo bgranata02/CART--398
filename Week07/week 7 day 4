@@ -1,0 +1,20 @@
+
+//week 7 day 4
+
+
+$drum:
+s("bd:6!4, [sbd:7 rim:5]*8")
+.slow(2)
+.gain("[.3  .5 .8]*4")
+
+
+ $hh:
+s("hh:6!16")
+.gain("[.6 .3]*4")
+ 
+ 
+ $note:
+n("<0 6 8 7 0, [0  ~ 4 3]*4>")
+  .n(irand(4))
+  .slow(2)
+._pianoroll()
