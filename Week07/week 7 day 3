@@ -1,3 +1,4 @@
+
 //week 7 day 3
 $beat:
 note("<[bb bb2] [ bb2 eb1]*7>")
@@ -14,7 +15,13 @@ s("<[hh:6 bd:6]*4>,  ~ ~ ~ ~ ~ ~ ~ <[hh:6!4]>")
 
 
 $guitar:
-n("<5 [8 3]*4 3>, <[ ~ ~ ~ ~ ~ ~ [<5 2>*4]]>")
+n("<5 [8 3]*4 3>")
 .s("gm_acoustic_bass")
 .n(irand(6))
-.gain(.5)'
+.gain(.9)
+
+$guitar:
+n("< ~ 5@ [8 3]*4 3>")
+.s("gm_acoustic_bass")
+.scale("c:major")
+.gain(.4)
