@@ -1,17 +1,16 @@
-
 //week 7 day 5
 
 
 $drum:
-s("bd:6!4,   bd:4 [sbd:7, rim:5]*4")
+s("bd:6!4,   bd:4 [sbd:7, rim:4]*4")
 .ply(2)
-.gain("[.3  .5 .8]*4")
+.gain("[.3  .1 .4]*4")
 .color("pink")
 
 
  $hh:
 s("hh:6!18")
-.gain("[.6 .2]*8")
+.gain("[.3 .2]*8")
 .every(5, x => x.cutoff(8))
 .color("cyan")
 .scope()
