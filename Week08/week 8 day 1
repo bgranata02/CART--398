@@ -1,0 +1,22 @@
+
+$hh: 
+s("[sbd casio]*2")
+//.ply(2)
+.gain(".2 .3 .1")
+
+$note:
+n("0, 2 < [ 3 1]*4 [2 0]*4>")
+.s("gm_electric_guitar_muted")
+.scale("a:minor")
+.every(2, x=> x.rev())
+.slow(2)
+
+
+$note1:
+n(" 0 3 0 <[4 2]*2 [ 5 2]*2>")
+.s("gm_music_box")
+  .scale("a:minor")
+.slow(2)
+.gain(.2)
+//.delay()
+.every(2, x=> x.rev())
