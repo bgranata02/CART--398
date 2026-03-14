@@ -1,0 +1,17 @@
+
+//osc og (3, .8 .8)
+osc(3,.8,.8)
+  //og brigthness 0.7, .2, .6 change number (.4-7, 5.1) with everything .1-3)
+  //brightness can be commented out as well
+  .brightness(.1, 1.1, .6)
+  //og  .rotate(x=> 2*Math.sin(.20*time)) change .20 => 2 (increases speed) 
+  .rotate(x=> 3*Math.sin(.2*time))
+  //og  .modulate(noise(), 3.1)  change the 3.1 => .1 .5 .8  Also change noise to voronoid
+  .modulate(noise(), 3.1 )
+  //change shapes 4, 6,  9
+  .kaleid(9)
+  //og .add(gradient(6),0.5)
+  .add(gradient(6),.5)
+  //can be commented out at any moment
+  .add(voronoi(8, .7, .6),.5)
+.out()
