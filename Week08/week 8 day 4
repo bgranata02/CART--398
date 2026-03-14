@@ -13,5 +13,5 @@ osc(3,.8,.8)
   //og .add(gradient(6),0.5)
   .add(gradient(6),.5)
   //can be commented out at any moment
-  .add(voronoi(8, .7, .6),.5)
+  .add(voronoi(8, 3, .6),.5)
 .out()
