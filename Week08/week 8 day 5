@@ -1,0 +1,14 @@
+
+//osc og (3, .8 .8)
+osc(3,.8,.8)
+  .brightness(.1, 1.1, .6)
+  .rotate(x=> 3*Math.sin(.2*time))
+  .modulate(noise(), 3.1 )
+  //change shapes 4, 6,  9
+  .kaleid(9)
+  //og .add(gradient(6),0.5)
+  .add(gradient(6),.5)
+  .add(voronoi(3, 4, 9),2)
+.out()
+
+
