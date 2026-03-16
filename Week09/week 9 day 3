@@ -1,0 +1,30 @@
+$:
+s("oh [bd rim]*2")
+.gain(".2 .1 .3")
+.ply(2)
+
+
+$note:
+note("<  b [ c d]*4 >")
+.s("gm_distortion_guitar")
+.gain(.4)
+.ply(2)
+//.lpf(700)
+.n(irand(3))
+.every(6, x=> x.cutoff(4))
+
+$note2:
+note(" < c b [c b], <[ c b]>*4, e c [d c e]*5>")
+.s("gm_overdriven_guitar")
+//.gain(.4)
+.lpf(900)
+
+$beat:
+n("< [3  5 9]*4, [ 4 3]*4>")
+.s("sawtooth")
+
+$bea2t:
+n("< 5 [3 9]*5 [ 4 3]*4>")
+.s("gm_guitar_fret_noise")
+.lpf(700)
+
