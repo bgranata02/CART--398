@@ -1,0 +1,12 @@
+
+s0.initCam()  
+// src(s0).out() // raw camera
+
+src(s0).hue(9).saturate(20) // color-shifted camera
+.add(gradient(6),.5)
+.kaleid(4)
+  .rotate(x=> 3*Math.sin(.6*time))
+  .add(voronoi(9, 9, .9),.5)
+  .colorama()
+.blend(osc(10, 0.1, 1), 0.3)
+.out()
