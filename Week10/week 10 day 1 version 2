@@ -1,0 +1,15 @@
+
+s0.initCam()  
+// src(s0).out() // raw camera
+
+src(s0).hue(9).saturate(20) 
+
+.add(gradient(6),.5)
+.kaleid(5)
+  .rotate(x=> 2*Math.sin(.7*time))
+  //.add(voronoi(9, 9, 9),.5)
+  .add(voronoi(2, 9, .9),.5)
+  .colorama()
+.blend(osc(10, 0.1, 1), 0.3)
+  //.add(noise(9, 3, 2),4)
+.out()
