@@ -1,0 +1,34 @@
+$:
+n("a b, [ c e a c]*4, c e")
+.s(" gm_acoustic_guitar_steel")
+.gain(.3)
+rev()
+
+$sparkles:
+s("marktrees")
+.every(2, x=> x.cutoff())
+.gain(".3 .1")
+
+$hh:
+s("casio,[hh[rim bd]*2]")
+.lpf(700)
+.gain(.4)
+.ply(2)
+.every(8, x=>x.rev())
+
+$noise:
+note("a b, <c d e [ b c]*2 [g e]*2>")
+.s("gm_acoustic_guitar_steel")
+.ply(2)
+//.slow(2)
+
+_$n:
+note("a b, <[g e]*2 [ b e]*4>")
+.s("gm_acoustic_guitar_steel")
+.ply(2)
+
+$notes:
+n("a b, [ a c]*4, c e, [ e g]*2")
+.s(" gm_electric_guitar_muted")
+rev()
+
