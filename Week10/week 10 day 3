@@ -1,0 +1,23 @@
+$:
+n("a b, [ c e a c]*4, c e")
+.s(" gm_guitar_harmonics")
+.lpf(300)
+rev()
+
+$note:
+n("a c e g , <d [ a b f c]*4>, c b g e")
+.s(" gm_acoustic_guitar_nylon")
+.lpf(400)
+.rev()
+
+$hh:
+s("casio,[hh[rim bd]*2]")
+.lpf(700)
+.gain(.4)
+.ply(2)
+.every(8, x=>x.rev())
+
+$noise:
+note("a b, <c d e [ b c]*2 [g e]*2>")
+.s("gm_acoustic_guitar_steel")
+.ply(2)
