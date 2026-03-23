@@ -1,0 +1,28 @@
+// 
+$:
+//note("e, <b [c b]*4>, < e [b e]*8>")
+note("e, <b [c b]*4>, <[b e]*8>")
+.s("sawtooth")
+  .scale("a:minor")
+.lpf(200)
+//.rev()
+
+$note:
+note(" a <b [c  b]*2, b [d c]*4 d e>")
+.s("sine")
+
+
+$beat:
+s("<9000_bd [rim:2 sbd]*4>")
+.gain(.4)
+.lpf(400)
+.rev()
+
+$beat:
+s("<bd [bd rim]*2> bd rim sine")
+.lpf(200)
+
+$hh:
+s("hh*16")
+.lpf(500)
+.gain(".7 .5")
