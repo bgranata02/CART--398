@@ -1,0 +1,33 @@
+$hh:
+s("<bd hh sd rim hh>*8")
+.lpf(500)
+.gain(.5)
+.n(irand(3))
+
+$beat:
+n(" d c e, [ d a]*4")
+.s("gm_xylophone")
+.lpf(800)
+.gain(.2)
+.rev()
+
+$:
+s("wt_digital_echoes")
+.gain(".4 .2")
+
+$guitar1:
+n(" b e d < b e>, <e a [e c d c]*2>")
+.s("gm_electric_guitar_muted")
+//.lpf(800)
+.gain(.5)
+.rev()
+
+$guitar:
+n(" < e [ a c g b ]*2>")
+.s("gm_acoustic_guitar_steel")
+.gain(.2)
+
+$guitar3:
+n(" < [ b d g c]*4>")
+.s("gm_acoustic_guitar_steel")
+.gain(.2)
